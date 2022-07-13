@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { HTMLAttributes } from 'react'
 
 
-export const AsideContainer = styled.aside`
+export const AsideContainer = styled.aside<any>`
     position: fixed;
     top: 0;
     right: ${(props) => props.cartState === true ? '0 ': '-120%' };

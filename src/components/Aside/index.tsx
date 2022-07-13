@@ -26,10 +26,7 @@ export const Aside = ({
   // }, [items]);
 
   return (
-    <AsideContainer
-      //@ts-ignore
-      cartState={cartState}
-    >
+    <AsideContainer cartState={cartState}>
       <h1>Carrinho de Compras</h1>
       <CloseButton onClick={handleClose}>X</CloseButton>
       <ProductsContainer>
